@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrendoAL | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<!-- HEADER -->
+
+<body class="min-h-screen">
+    <header class="relative mask h-screen flex flex-col items-center justify-center px-4">
+        <div class="absolute inset-0 bg-black"></div>
+        <div class="relative z-10 text-center">
+            <div class="w-40 h-40 mx-auto mb-6  border-red-600 overflow-hidden shadow-lg">
+              
+                   
+            </div>
+            <h1 class="title-font text-3xl md:text-5xl mb-4 text-red-600 glow">BRENDO ALMEIDA</h1>
+            <div class="typewriter">
+                <p class="text-xl md:text-2xl font-bold">Desenvolvedor Full Stack</p>
+            </div>
+            <div class="flex justify-center mt-8 space-x-4">
+                <a href="https://github.com/BrendoAL" target="_blank"
+                    class="text-white hover:text-red-500 text-2xl transition duration-300">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/brendoalmeidalk/"
+                    class="text-white hover:text-red-500 text-2xl transition duration-300">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-red-500 text-4xl">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+
+    <nav class="sticky top-0 z-50 bg-black  backdrop-filter backdrop-blur-sm shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-red-600 title-font text-xl">BRENDO<span class="text-white">AL</span></div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link text-white hover:text-red-500 py-2">Sobre</a>
+                    <a href="#skills" class="nav-link text-white hover:text-red-500 py-2">Habilidades</a>
+                    <a href="#projects" class="nav-link text-white hover:text-red-500 py-2">Projetos</a>
+                    <a href="#contact" class="nav-link text-white hover:text-red-500 py-2">Contato</a>
+                </div>
+                <button class="md:hidden text-white focus:outline-none" aria-label="Mobile menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2 text-center">
+                <a href="#about" class="block text-white hover:text-red-500 py-2 border-b border-gray-700">Sobre</a>
+                <a href="#skills"
+                    class="block text-white hover:text-red-500 py-2 border-b border-gray-700">Habilidades</a>
+                <a href="#projects"
+                    class="block text-white hover:text-red-500 py-2 border-b border-gray-700">Projetos</a>
+                <a href="#contact" class="block text-white hover:text-red-500 py-2">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SOBRE MIM -->
+
+    <section id="about" class="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="title-font text-3xl md:text-4xl mb-12 text-center text-red-600">SOBRE MIM</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="w-64 h-64 rounded-full border-4 border-red-600 overflow-hidden shadow-xl">
+                        <img src="Mídia.jpg" alt="BrendoAL"
+                            class="w-full h-full object-cover">
+                    </div>
+                </div> 
+                <div class="md:w-2/3 text-gray-300">
+                    <p class="mb-4 text-lg">Olá! Eu sou Brendo Almeida, um desenvolvedor Full Stack apaixonado por criar
+                        soluções tecnológicas inovadoras e eficientes.</p>
+                    <p class="mb-4 text-lg">Com experiência em diversas linguagens de programação e frameworks, estou
+                        sempre buscando aprender novas tecnologias e melhorar minhas habilidades.</p>
+                    <p class="mb-6 text-lg">Meu objetivo é desenvolver aplicações que não apenas atendam às necessidades
+                        dos usuários, mas que também ofereçam uma experiência excepcional.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact"
+                            class="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition duration-300">
+                            Contate-me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+
+    <section id="skills" class="py-20 px-4 bg-gray-900">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="title-font text-3xl md:text-4xl mb-12 text-center text-red-600">MINHAS HABILIDADES</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div
+                    class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-red-500/20 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Java</h3>
+                    <p class="text-gray-400">Desenvolvimento de APIs, aplicações web e microsserviços.</p>
+                </div>
+                <div
+                    class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-red-500/20 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">TypeScript</h3>
+                    <p class="text-gray-400">Interatividade e lógica de aplicações.</p>
+                </div>
+                <div
+                    class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-red-500/20 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Spring Boot</h3>
+                    <p class="text-gray-400">Integração facilitada a bancos de dados e microsserviços.</p>
+                </div>
+                <div
+                    class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-red-500/20 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fab fa-angular"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Angular</h3>
+                    <p class="text-gray-400">Desenvolvimento de interfaces modernas.</p>
+                </div>
+                <div
+                    class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-red-500/20 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Node.js</h3>
+                    <p class="text-gray-400">Backend eficiente e escalável.</p>
+                </div>
+                <div
+                    class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-red-500/20 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">SQL</h3>
+                    <p class="text-gray-400">Modelagem e consulta de bancos de dados.</p>
+                </div>
+
+                <div
+                    class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-red-500/20 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">DevOps</h3>
+                    <p class="text-gray-400">Deploy e infraestrutura de aplicações.</p>
+                </div>
+                <div
+                    class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-red-500/20 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Docker/Kubernetes</h3>
+                    <p class="text-gray-400">Criação e orquestração de containers Docker.</p>
+                </div>
+                <div
+                    class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-red-500/20 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">AWS</h3>
+                    <p class="text-gray-400">Serviços em nuvem.</p>
+                </div>
+                <div
+                    class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-red-500/20 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fab fa-gitlab"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">GitLab</h3>
+                    <p class="text-gray-400">Ci/Cd.</p>
+                </div>
+                <div
+                    class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-red-500/20 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">GIT</h3>
+                    <p class="text-gray-400">Controle de versão e colaboração.</p>
+                </div>
+                <div
+                    class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-red-500/20 transition duration-300">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Linux</h3>
+                    <p class="text-gray-400">Sistema operacional de código aberto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+
+    <section id="projects" class="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="title-font text-3xl md:text-4xl mb-12 text-center text-red-600">MEUS PROJETOS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition duration-500">
+                    <div class="h-48 overflow-hidden">
+
+                        <img src="Banner.jpg" alt="Site ONG Casa De Jairo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Site ONG Casa De Jairo</h3>
+                        <p class="text-gray-400 mb-4">Um website dinâmico para a ONG Casa De Jairo, desenvolvido para
+                            aumentar as doações e a visibilidade da causa.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">Node.js</span>
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">Angular</span>
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">TypeScript</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="https://casadejairo.online/" class="text-red-500 hover:text-red-400 font-medium">Acessar o Site</a>
+                            <a href="https://github.com/BrendoAL/Front_SiteCasaDeJairo"
+                                class="text-white hover:text-red-500">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition duration-500">
+                    <div class="h-48 overflow-hidden">
+                        <img src="API.webp" alt="API Casa De Jairo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">API Casa De Jairo</h3>
+                        <p class="text-gray-400 mb-4">Uma API RESTful para a ONG Casa De Jairo, permitindo o cadastro de
+                            voluntarios e doações.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">Spring Boot</span>
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">JWT</span>
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">MySQL</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="https://github.com/BrendoAL/Back_SiteCasaDeJairo"
+                                class="text-red-500 hover:text-red-400 font-medium">Ver Detalhes</a>
+                            <a href="https://github.com/BrendoAL/Back_SiteCasaDeJairo"
+                                class="text-white hover:text-red-500">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition duration-500">
+                    <div class="h-48 overflow-hidden">
+                        <img src="cep.png" alt="Project 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Busca Cep</h3>
+                        <p class="text-gray-400 mb-4">API para busca de CEP através de um repositorio no github.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">Spring Boot</span>
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">MySQL</span>
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">Docker</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="https://github.com/BrendoAL/Busca-Cep"
+                                class="text-red-500 hover:text-red-400 font-medium">Ver Detalhes</a>
+                            <a href="https://github.com/BrendoAL/Busca-Cep" class="text-white hover:text-red-500">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition duration-500">
+                    <div class="h-48 overflow-hidden">
+                        <img src="Distribuidora-Agua-Mineral-Brasilia-DF-1024x576.jpg" alt="Project 4" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Distribuidora</h3>
+                        <p class="text-gray-400 mb-4">Sistema para o gerenciamento de produtos e fornecedores de uma
+                            distribuidora de água.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">Spring Boot</span>
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">MVC</span>
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">PostgreSQL</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="https://github.com/BrendoAL/DistribuidoraDeAgua"
+                                class="text-red-500 hover:text-red-400 font-medium">Ver Detalhes</a>
+                            <a href="https://github.com/BrendoAL/DistribuidoraDeAgua"
+                                class="text-white hover:text-red-500">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition duration-500">
+                    <div class="h-48 overflow-hidden">
+                        <img src="R.jpg" alt="Project 5" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Campo Minado</h3>
+                        <p class="text-gray-400 mb-4">Recriação do clássico jogo Campo Minado.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">Java</span>
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">Swing</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="https://github.com/BrendoAL/CampoMinado" class="text-red-500 hover:text-red-400 font-medium">Ver Detalhes</a>
+                            <a href="https://github.com/BrendoAL/CampoMinado" class="text-white hover:text-red-500">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition duration-500">
+                    <div class="h-48 overflow-hidden">
+                        <img src="calculadora.png"
+                            alt="Project 6" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Calculadora</h3>
+                        <p class="text-gray-400 mb-4">Uma Calculadora criada com Java puro e Swing.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">Java</span>
+                            <span class="px-2 py-1 bg-gray-700 text-red-400 text-xs rounded-full">Swing</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="#" class="text-red-500 hover:text-red-400 font-medium">Ver Detalhes</a>
+                            <a href="#" class="text-white hover:text-red-500">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="https://github.com/BrendoAL" target="_blank"
+                    class="inline-block px-8 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition duration-300">
+                    Ver Mais no GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+
+    <section id="contact" class="py-20 px-4 bg-black">
+    <div class="container mx-auto max-w-4xl">
+        <h2 class="title-font text-3xl md:text-4xl mb-12 text-center text-red-600">ENTRE EM CONTATO</h2>
+        <div class="bg-gray-900 rounded-lg shadow-xl overflow-hidden">
+            <div class="md:flex">
+                <!-- Lado esquerdo -->
+                <div class="md:w-1/2 bg-red-600 p-8 text-white">
+                    <h3 class="text-2xl font-bold mb-4">Informações de Contato</h3>
+                    <div class="mb-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-envelope text-2xl mr-4"></i>
+                            <span>brendoalmeidalk@gmail.com</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-phone-alt text-2xl mr-4"></i>
+                            <span>+55 (92) 9222-6146</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-2xl mr-4"></i>
+                            <span>Santa Catarina, Brasil</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/BrendoAL" target="_blank"
+                            class="text-white hover:text-black text-2xl transition duration-300">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/brendoalmeidalk/"
+                            class="text-white hover:text-black text-2xl transition duration-300">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lado direito - Formulário -->
+                <div class="md:w-1/2 p-8">
+                    <form id="contactForm" class="space-y-4">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Nova mensagem recebida via portfólio">
+
+                        <div>
+                            <label for="name" class="block text-gray-300 mb-2">Nome</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-red-500 text-white"
+                                required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-red-500 text-white"
+                                required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-300 mb-2">Assunto</label>
+                            <input type="text" id="subject" name="subject"
+                                class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-red-500 text-white"
+                                required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-300 mb-2">Mensagem</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-red-500 text-white"
+                                required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition duration-300">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup de sucesso -->
+    <div id="successPopup"
+        class="fixed top-5 right-5 bg-green-600 text-white px-6 py-4 rounded shadow-lg hidden z-50 transition-all duration-300">
+        ✅ Mensagem enviada com sucesso!
+    </div>
+</section>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-black py-8 px-4 border-t border-gray-800">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://github.com/BrendoAL" target="_blank" class="text-gray-400 hover:text-red-500">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/brendoalmeidalk/" class="text-gray-400 hover:text-red-500">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="mailto:Brendoalmeidalk@gmail.com" class="text-gray-400 hover:text-red-500">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+    </footer>
+</body>
+
+</html>
